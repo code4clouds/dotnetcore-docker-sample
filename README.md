@@ -10,11 +10,11 @@ The instructions for docker can be found [here](https://docs.docker.com/engine/i
 The instructions for .NET core can be found [here](https://www.microsoft.com/net/core#linuxubuntu).
 
 ### Install GIT
-```bash
+``` bash
 sudo apt-get install git
 ```
 ### Clone the directory
-```bash
+``` bash
 git clone https://github.com/code4clouds/dotnetcore-docker-sample.git
 ```
 
@@ -23,10 +23,16 @@ git clone https://github.com/code4clouds/dotnetcore-docker-sample.git
 chmod +x build.sh
 ```
 ### Execute the build script
-```bash
+``` bash
 ./build.sh
 ```
+
+### OR Execute the multi-stage docker file
+``` bash
+docker build -t helloworld .
+```
+
 ### Run Docker
-```bash
+``` bash
 docker run helloworld
 ```
