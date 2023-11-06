@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:2.1-sdk AS build
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 RUN mkdir /build
 COPY . /build
 WORKDIR /build
